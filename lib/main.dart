@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'home/ui/place_holders.dart';
+import 'package:layout_assessment/home/ui/home_vu.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +16,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const LayoutAssessment());
+        home: const HomeVU());
   }
 }
