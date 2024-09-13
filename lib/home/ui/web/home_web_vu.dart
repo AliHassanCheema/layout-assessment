@@ -27,7 +27,7 @@ Widget webFields(HomeVM viewModel) {
   );
 }
 
-Row webTopView(BoxConstraints constraints) {
+Widget webTopView(BoxConstraints constraints) {
   return Row(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [

@@ -15,7 +15,7 @@ class HomeVM extends BaseViewModel {
     notifyListeners();
   }
 
-  onSaveData() {
+  void onSaveData() {
     if (formKey.currentState!.validate()) {
       formKey.currentState!.save();
       users.add(Person(name!, age!));
