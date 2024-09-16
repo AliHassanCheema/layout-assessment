@@ -49,7 +49,7 @@ Widget usersList(BuildContext context, HomeVM viewModel) {
                     viewModel.users[index].name,
                     overflow: TextOverflow.ellipsis,
                   )),
-                  const SizedBox(width: 20),
+                  spaceX(space: 20),
                   Text(viewModel.users[index].age.toString())
                 ],
               ),
@@ -65,7 +65,7 @@ Widget bulbButton(HomeVM viewModel) {
         viewModel.onChangeLight();
       },
       icon: Icon(Icons.lightbulb,
-          size: 100, color: viewModel.isOn ? Colors.yellow[400] : Colors.grey));
+          size: 100, color: viewModel.isOn ? Colors.amber : Colors.grey));
 }
 
 Widget submitButton(HomeVM viewModel) {

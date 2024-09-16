@@ -29,7 +29,7 @@ Widget mobileTopView(BoxConstraints constraints) {
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
       imageSection(),
-      const SizedBox(width: 20),
+      spaceX(space: 20),
       textSection(constraints),
     ],
   );

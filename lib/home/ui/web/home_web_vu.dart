@@ -15,7 +15,7 @@ Widget webFields(HomeVM viewModel) {
               onGetValue: (v) {
                 viewModel.name = v;
               })),
-      const SizedBox(width: 20),
+      spaceX(space: 20),
       Expanded(
           child: CustomTextFieldVU(
               hintText: 'Write Age',
@@ -32,7 +32,7 @@ Widget webTopView(BoxConstraints constraints) {
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Expanded(child: textSection(constraints)),
-      const SizedBox(width: 20),
+      spaceX(space: 20),
       Expanded(child: imageSection())
     ],
   );
