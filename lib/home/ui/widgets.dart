@@ -5,6 +5,8 @@ import 'home_vm.dart';
 import 'mobile/home_mobile_vu.dart';
 import 'web/home_web_vu.dart';
 
+Widget spaceY({double? space}) => SizedBox(height: space);
+Widget spaceX({double? space}) => SizedBox(width: space);
 Widget imageSection() {
   return ClipRRect(
     borderRadius: BorderRadius.circular(20),

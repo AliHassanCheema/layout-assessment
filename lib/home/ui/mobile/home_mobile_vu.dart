@@ -13,7 +13,7 @@ Widget mobileFields(HomeVM viewModel) {
           onGetValue: (v) {
             viewModel.name = v;
           }),
-      const SizedBox(height: 20),
+      spaceY(space: 20),
       CustomTextFieldVU(
           hintText: 'Write Age',
           inputFormatters: [FilteringTextInputFormatter.digitsOnly],

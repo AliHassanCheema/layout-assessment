@@ -12,6 +12,7 @@ class HomeVU extends StackedView<HomeVM> {
   Widget builder(BuildContext context, HomeVM viewModel, Widget? child) {
     return Scaffold(
       body: LayoutBuilder(builder: (context, constraints) {
+        debugPrint('$constraints');
         bool isMobile = constraints.maxWidth <= 880;
         return SingleChildScrollView(
           child: Padding(
@@ -19,14 +20,14 @@ class HomeVU extends StackedView<HomeVM> {
             child: Column(
               children: [
                 isMobile ? mobileTopView(constraints) : webTopView(constraints),
-                const SizedBox(height: 20),
+                spaceY(space: constraints.maxHeight * 0.02),
                 bulbButton(viewModel),
-                const SizedBox(height: 20),
+                spaceY(space: constraints.maxHeight * 0.02),
                 if (viewModel.isOn) ...[
                   formFields(viewModel, isMobile),
-                  const SizedBox(height: 20),
+                  spaceY(space: constraints.maxHeight * 0.02),
                   submitButton(viewModel),
-                  const SizedBox(height: 20),
+                  spaceY(space: constraints.maxHeight * 0.02),
                 ],
                 usersList(context, viewModel)
               ],
